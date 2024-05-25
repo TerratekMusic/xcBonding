@@ -1,13 +1,11 @@
-
 #root {
-  max-width: 1400px;
-  min-height: 100vh;
+  max-width: 100%;
+  min-height: 100%;
   margin: 0 auto;
-  padding: 0 16px;
   display: flex;
   flex-direction: column;
   box-sizing: content-box;
-  background:white; 
+  background: white;
 }
 
 main {
@@ -15,7 +13,6 @@ main {
   background-size: 200% 200%;
   animation: gradientAnimation 5s linear infinite;
 }
-
 
 body {
   background: white;

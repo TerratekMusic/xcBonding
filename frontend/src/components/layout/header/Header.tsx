@@ -1,4 +1,4 @@
-import { Image } from "@chakra-ui/react";
+// import { Image } from "@chakra-ui/react";
 import { Account } from "./account";
 import styles from "./Header.module.scss";
 
@@ -11,7 +11,10 @@ type Props = {
 function Header({ isAccountVisible }: Props) {
   return (
     <header className={styles.header}>
-      <Image>{xcBondImage}</Image>
+      <div className={styles.headerLogo}>
+        <img src={xcBondImage} alt="xcBonding" />
+      </div>
+      {/* <Image>{xcBondImage}</Image> */}
       {isAccountVisible && <Account />}
     </header>
   );
