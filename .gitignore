@@ -128,3 +128,22 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Ignore Cargo build files
+/target/
+**/*.rs.bk
+
+# Ignore Rust package manager files
+**/Cargo.lock
+
+# Ignore .env file
+.env
+
+# Ignore IDE/Editor files
+.idea/
+*.iml
+*.swp
+*.swo
+.vscode/
+*.sublime*
+*.DS_Store
